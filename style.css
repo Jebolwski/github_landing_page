@@ -1,0 +1,253 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  overflow-x: hidden;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.top_header {
+  background-color: #24292f;
+  height: 62px;
+}
+
+.top_header__text_input {
+  background-color: transparent;
+  height: 28px;
+  border: 0;
+  outline: 0;
+  color: rgb(255, 255, 255);
+  border: 1px solid #4c555e;
+  border-radius: 6px;
+  padding: 5px 12px;
+  width: 250px;
+  font-size: 14px;
+  transition: 0.4s ease-in;
+}
+
+.top_header__text_input::placeholder {
+  color: rgba(255, 255, 255, 0.877);
+}
+
+.top_header__text_input:focus {
+  width: 360px;
+  color: #4c555e;
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.877);
+}
+
+.top_header__text_input:focus ~ .top_header__text_input_icon {
+  display: none;
+}
+
+.top_header__text_input:focus ~ .top_header__text_input::placeholder {
+  color: rgba(46, 46, 46, 0.877);
+}
+
+.top_header__text_input_icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2px;
+}
+
+.top_header__links {
+  font-weight: 600;
+  font-size: 14.2px;
+}
+
+.top_header__links a {
+  color: white;
+  text-decoration: none;
+}
+
+.top_header__links a:hover {
+  color: #d0d7de;
+}
+
+.top_header__image {
+  border-radius: 50%;
+}
+
+.block__left {
+  overflow-y: auto;
+  background-color: white !important;
+  height: 100vh;
+}
+
+.block__left_user {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.block__middle {
+  background-color: #f6f8fa !important;
+}
+
+.block__right {
+  background-color: #f6f8fa !important;
+}
+
+.block__left_recent_repos {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.block__left_new_button {
+  background-color: #2da44e;
+  color: white;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  border: 1px solid #2b9248;
+  padding: 4px 12px;
+  transition: 0.1s;
+}
+
+.block__left_new_button:hover {
+  background-color: #299147;
+  transition: 0.1s;
+}
+
+.block__left_new_button {
+  color: white;
+}
+
+.block__left_find_repo {
+  background-color: #f6f8fa;
+  color: #24292f;
+  outline: 0;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  border: 1px solid #d0d7de;
+  padding: 5px 10px;
+  font-size: 14.2px;
+}
+
+.block__left_find_repo:focus {
+  border: 2px solid #0969da;
+}
+
+.block__left_repos small {
+  overflow-wrap: anywhere;
+}
+
+.block__left_repos small:hover {
+  text-decoration: underline;
+}
