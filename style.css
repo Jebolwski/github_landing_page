@@ -186,6 +186,9 @@ table {
 
 .block__left {
   overflow-y: auto;
+  position: sticky !important;
+  top: 0;
+  left: 0;
   background-color: white !important;
   height: 100vh;
 }
@@ -193,14 +196,6 @@ table {
 .block__left_user {
   font-size: 13px;
   font-weight: 500;
-}
-
-.block__middle {
-  background-color: #f6f8fa !important;
-}
-
-.block__right {
-  background-color: #f6f8fa !important;
 }
 
 .block__left_recent_repos {
@@ -250,4 +245,70 @@ table {
 
 .block__left_repos small:hover {
   text-decoration: underline;
+}
+
+.block__middle {
+  height: 100%;
+  background-color: #f6f8fa !important;
+}
+
+.block__middle_beta_button {
+  background-color: transparent;
+  border: 1px solid #2da44e;
+  color: #1a7f37;
+  border-radius: 9999px;
+  font-size: 13px;
+  outline: 0;
+}
+
+.block__middle_following {
+  position: relative;
+}
+
+.block__middle_following::after {
+  content: "";
+  width: 84px;
+  position: absolute;
+  height: 2px;
+  left: 0px;
+  bottom: -9px;
+  background-color: #fd8c73;
+}
+
+.block__middle_for_you {
+  position: relative;
+}
+
+.block__middle_for_you::after {
+  content: "";
+  width: 114px;
+  position: absolute;
+  height: 2px;
+  left: 0;
+  bottom: -9px;
+  background-color: #fd8c73;
+}
+
+.block__left_tab_clicks div div:hover {
+  background-color: #e3e6e9a9;
+  border-radius: 6px;
+  transition: 0.14s;
+}
+
+.block__middle_send_feedback {
+  color: #0969da;
+  font-size: 15px;
+}
+
+.block__middle_send_feedback:hover {
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+.block__middle_send_filter {
+  font-size: 15px;
+}
+
+.block__right {
+  background-color: #f6f8fa !important;
 }
